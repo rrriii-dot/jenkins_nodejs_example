@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-              sh "ls"
+                sh "docker build -t nodejs_app ."
+                sh "docker run --name nodejs_simple_app nodejs_app"
             }
         }
     }
