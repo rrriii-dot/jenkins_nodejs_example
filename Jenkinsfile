@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        registry = "amr158/nodejs_app"
+        registry = "amr158/nodejs"
         registryCredential = 'amr158'
         dockerImage = ''
     }
