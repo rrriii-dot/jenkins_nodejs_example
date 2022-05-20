@@ -8,7 +8,7 @@ pipeline {
         }
         stage('run image') {
             steps{
-                sh 'docker run -p 3000:3000--name nodejs-app nodejs-app'
+                sh 'docker run -p 3000:3000 --name nodejs-app nodejs-app'
             }
         }
     }
