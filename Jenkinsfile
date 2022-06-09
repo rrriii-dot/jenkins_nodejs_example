@@ -20,7 +20,7 @@ pipeline {
         stage ('deploy'){
             
             steps{
-                node('private-ec2'){
+                node('slave'){
                     git branch: 'rds_redis', 
                          url: "https://github.com/rrriii-dot/jenkins_nodejs_example.git"
                     withCredentials([usernamePassword(credentialsId:"docker-hub",usernameVariable:"username",passwordVariable:"pass")]){
