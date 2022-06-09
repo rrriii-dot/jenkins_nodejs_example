@@ -17,8 +17,7 @@ pipeline {
                 
                 sh 'docker run -p 3000:3000 -d ${username}/jenkins_sprints:v1.0'
                 }
-            }
-            
+            }      
         }
     }
 }
